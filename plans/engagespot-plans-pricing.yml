@@ -1,0 +1,127 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+provider: Engagespot
+providerId: engagespot
+created: '2026-06-12'
+modified: '2026-06-12'
+reconciled: true
+type: freemium
+url: https://engagespot.co/pricing
+plans:
+  - name: Launch
+    description: >
+      Free forever tier for developers getting started with notification
+      infrastructure. Includes access to all channels, 2 environments, 2 team
+      members, and 7-day feed retention.
+    type: free
+    price: 0
+    currency: USD
+    billingPeriod: monthly
+    quotas:
+      - metric: event_triggers
+        limit: 10000
+        timeFrame: monthly
+        type: quota
+    features:
+      - name: Recipients
+        value: unlimited
+        type: boolean
+      - name: Environments
+        value: '2'
+        type: quota
+      - name: Team Members
+        value: '2'
+        type: quota
+      - name: Feed Retention
+        value: 7 days
+        type: quota
+      - name: Data Centers
+        value: EU/US
+        type: boolean
+      - name: Channels
+        value: in-app, email, web push, mobile push, WhatsApp, Slack, Discord, webhooks
+        type: boolean
+      - name: Support
+        value: Email support
+        type: boolean
+  - name: Growth
+    description: >
+      For growing teams needing higher volumes, unlimited environments and team
+      members, 90-day feed retention, and priority support. Additional triggers
+      available at $1.50 per 1,000 with capped pricing.
+    type: paid
+    price: 250
+    currency: USD
+    billingPeriod: monthly
+    quotas:
+      - metric: event_triggers
+        limit: 250000
+        timeFrame: monthly
+        type: quota
+      - metric: additional_event_triggers
+        limit: null
+        price: 1.50
+        per: 1000
+        type: metered
+    features:
+      - name: Recipients
+        value: unlimited
+        type: boolean
+      - name: Environments
+        value: unlimited
+        type: boolean
+      - name: Team Members
+        value: unlimited
+        type: boolean
+      - name: Feed Retention
+        value: 90 days
+        type: quota
+      - name: Data Centers
+        value: EU/US
+        type: boolean
+      - name: Channels
+        value: in-app, email, web push, mobile push, WhatsApp, Slack, Discord, webhooks
+        type: boolean
+      - name: Support
+        value: Priority email and chat support
+        type: boolean
+  - name: Enterprise
+    description: >
+      Custom enterprise tier with volume-based pricing, custom data centers,
+      custom feed retention, 24/7 priority support, custom SLA, and advanced
+      security features including SSO/SAML.
+    type: enterprise
+    price: 2500
+    pricingNote: Starts from $2,500/month; custom volume-based pricing
+    currency: USD
+    billingPeriod: monthly
+    quotas:
+      - metric: event_triggers
+        limit: custom
+        timeFrame: monthly
+        type: quota
+    features:
+      - name: Recipients
+        value: unlimited
+        type: boolean
+      - name: Environments
+        value: unlimited
+        type: boolean
+      - name: Team Members
+        value: unlimited
+        type: boolean
+      - name: Feed Retention
+        value: custom
+        type: quota
+      - name: Data Centers
+        value: custom
+        type: boolean
+      - name: Channels
+        value: in-app, email, web push, mobile push, WhatsApp, Slack, Discord, webhooks
+        type: boolean
+      - name: Support
+        value: 'Custom SLA + 24/7 priority support'
+        type: boolean
+      - name: SSO/SAML
+        value: 'true'
+        type: boolean

@@ -1,0 +1,81 @@
+aid: engagespot
+name: Engagespot
+description: >
+  Engagespot is a notification infrastructure platform that provides developers
+  with a unified REST API to send multi-channel notifications including in-app,
+  email, web push, mobile push, SMS, WhatsApp, Slack, Discord, and webhooks from
+  a single integration. The platform includes a pre-built customizable in-app
+  notification inbox, a visual workflow editor for complex messaging logic, and
+  a fine-grained user preference management system. Engagespot handles over 850
+  million monthly notifications and 3.7 billion API requests with 99.98% uptime,
+  supporting data residency in both US and EU regions. Teams can manage
+  notification templates, monitor delivery logs, and connect to third-party
+  providers such as SendGrid, AWS SES, Firebase, Twilio, and APNS through a
+  centralized dashboard.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Notifications
+  - In-App Notifications
+  - Push Notifications
+  - Email
+  - SMS
+  - Multi-Channel
+  - Messaging
+  - Developer Tools
+  - Notification Infrastructure
+url: https://raw.githubusercontent.com/api-evangelist/engagespot/refs/heads/main/apis.yml
+created: '2026-06-12'
+modified: '2026-06-12'
+specificationVersion: '0.19'
+apis:
+  - aid: engagespot:notifications-api
+    name: Engagespot Notifications API
+    description: >
+      The Engagespot REST API enables sending multi-channel notifications to
+      users, listing and deleting notification records, managing user accounts
+      and preferences, triggering and canceling notification workflows, and
+      building customizable in-app notification inboxes. The API supports both
+      backend authentication via API key and secret headers and frontend
+      user-level authentication via API key plus user ID or JWT bearer tokens.
+    humanURL: https://docs.engagespot.co/api/api-reference/introduction
+    baseURL: https://api.engagespot.co/v3
+    tags:
+      - Notifications
+      - In-App
+      - Push
+      - Email
+      - SMS
+      - Workflows
+      - User Preferences
+    properties:
+      - type: Documentation
+        url: https://docs.engagespot.co/api/api-reference/introduction
+      - type: OpenAPI
+        url: https://docs.engagespot.co/api/api-reference/introduction
+common:
+  - type: Website
+    url: https://engagespot.co/
+  - type: Documentation
+    url: https://docs.engagespot.co/
+  - type: GitHubOrganization
+    url: https://github.com/Engagespot
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/engagespot-co
+  - type: X
+    url: https://x.com/engagespot
+  - type: Blog
+    url: https://engagespot.co/blog
+  - type: Pricing
+    url: https://engagespot.co/pricing
+  - type: StatusPage
+    url: https://engagespot.statuspage.io/
+  - type: Plans
+    url: plans/engagespot-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/engagespot-rate-limits.yml
+  - type: FinOps
+    url: finops/engagespot-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

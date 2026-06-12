@@ -1,0 +1,38 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+provider: Engagespot
+providerId: engagespot
+created: '2026-06-12'
+modified: '2026-06-12'
+url: https://docs.engagespot.co/api/api-reference/introduction
+notes: >
+  Engagespot does not publish explicit per-endpoint rate limit values in their
+  public documentation. The platform documents built-in message brokers and
+  dead-letter queues for reliable delivery, and monthly event trigger quotas are
+  enforced per pricing plan (10,000 on Launch, 250,000 on Growth, custom on
+  Enterprise). The API returns HTTP 429 when limits are exceeded.
+throttled:
+  statusCode: 429
+  description: Too Many Requests — returned when monthly event trigger quota is exceeded or request rate limits are hit
+retryAfter:
+  header: Retry-After
+  description: Standard retry-after header may be returned on 429 responses
+limits:
+  - scope: account
+    metric: event_triggers
+    limit: 10000
+    timeFrame: monthly
+    plan: Launch
+    notes: Monthly event trigger quota for the free Launch plan
+  - scope: account
+    metric: event_triggers
+    limit: 250000
+    timeFrame: monthly
+    plan: Growth
+    notes: Monthly event trigger quota for the Growth plan; additional triggers at $1.50/1K
+  - scope: account
+    metric: event_triggers
+    limit: custom
+    timeFrame: monthly
+    plan: Enterprise
+    notes: Custom volume-based monthly quota for Enterprise plan

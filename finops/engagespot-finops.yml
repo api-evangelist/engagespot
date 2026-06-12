@@ -1,0 +1,67 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+provider: Engagespot
+providerId: engagespot
+created: '2026-06-12'
+modified: '2026-06-12'
+url: https://engagespot.co/pricing
+billingModel: subscription_plus_metered
+description: >
+  Engagespot charges a flat monthly subscription fee per plan tier, with the
+  Growth plan allowing metered overage charges at $1.50 per 1,000 additional
+  event triggers beyond the included 250,000. The Launch tier is free with a
+  hard cap at 10,000 monthly event triggers. Enterprise pricing is negotiated
+  as custom volume-based contracts.
+focusColumns:
+  - ChargeCategory: Usage
+  - ChargeSubcategory: Metered
+  - ResourceType: NotificationEventTrigger
+  - ServiceName: Engagespot Notifications API
+  - ServiceCategory: Developer Tools / Notification Infrastructure
+  - PricingUnit: per_1000_event_triggers
+  - BillingPeriod: Monthly
+meters:
+  - name: event_triggers
+    description: >
+      Each workflow trigger or API call that initiates a notification delivery
+      event counts as one event trigger against the monthly plan quota.
+    unit: event_trigger
+    pricePerUnit:
+      Launch: 0.00
+      Growth: 0.00
+      GrowthOverage: 0.0015
+      Enterprise: custom
+    freeIncluded:
+      Launch: 10000
+      Growth: 250000
+      Enterprise: custom
+  - name: notification_feed_retention
+    description: >
+      In-app notification feed history stored per workspace. Retention window
+      varies by plan and affects storage costs at the provider level.
+    unit: days
+    limits:
+      Launch: 7
+      Growth: 90
+      Enterprise: custom
+principles:
+  Visibility:
+    description: >
+      Teams should track monthly event trigger consumption against plan quotas
+      via the Engagespot console dashboard. Monitoring workflow trigger rates
+      and channel delivery volumes enables accurate cost forecasting.
+    recommendations:
+      - Monitor event trigger usage in the Engagespot console
+      - Set alerts before reaching plan quota thresholds
+      - Review per-channel delivery volumes to identify unused integrations
+  Optimization:
+    description: >
+      Reduce unnecessary event triggers by batching notifications where
+      possible, deduplicating recipients, and auditing workflow triggers for
+      unintended fan-out. Upgrading from Launch to Growth at high volumes is
+      more cost-effective than overage charges.
+    recommendations:
+      - Batch notifications to reduce per-trigger count
+      - Deduplicate recipients in workflow payloads
+      - Review triggered workflows for unintended loops or fan-out
+      - Evaluate plan upgrade when monthly overages exceed one Growth plan cost
