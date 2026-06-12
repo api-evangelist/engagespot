@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "engagespot": "https://engagespot.co/vocab#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "provider": {
+      "@id": "schema:provider",
+      "@type": "@id"
+    },
+    "Organization": "schema:Organization",
+    "WebAPI": "schema:WebAPI",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "notification": {
+      "@id": "engagespot:notification",
+      "@type": "@id"
+    },
+    "channel": {
+      "@id": "engagespot:channel",
+      "@type": "@id"
+    },
+    "workflow": {
+      "@id": "engagespot:workflow",
+      "@type": "@id"
+    },
+    "inAppNotification": "engagespot:InAppNotification",
+    "pushNotification": "engagespot:PushNotification",
+    "emailNotification": "engagespot:EmailNotification",
+    "smsNotification": "engagespot:SmsNotification",
+    "workflowTrigger": "engagespot:WorkflowTrigger",
+    "userPreference": "engagespot:UserPreference",
+    "apiKey": "engagespot:apiKey",
+    "apiSecret": "engagespot:apiSecret",
+    "userId": "engagespot:userId",
+    "dataResidency": "engagespot:dataResidency",
+    "baseURL": {
+      "@id": "schema:entryPoint",
+      "@type": "@id"
+    },
+    "documentation": {
+      "@id": "schema:documentation",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://engagespot.co/",
+      "@type": "Organization",
+      "name": "Engagespot",
+      "description": "Notification infrastructure platform providing a unified REST API for multi-channel notifications including in-app, email, web push, mobile push, SMS, WhatsApp, Slack, Discord, and webhooks.",
+      "url": "https://engagespot.co/",
+      "documentation": "https://docs.engagespot.co/"
+    },
+    {
+      "@id": "https://api.engagespot.co/v3",
+      "@type": "WebAPI",
+      "name": "Engagespot Notifications API",
+      "description": "REST API for sending multi-channel notifications, managing users and preferences, and triggering notification workflows.",
+      "provider": "https://engagespot.co/",
+      "baseURL": "https://api.engagespot.co/v3",
+      "documentation": "https://docs.engagespot.co/api/api-reference/introduction"
+    }
+  ]
+}

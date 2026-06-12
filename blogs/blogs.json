@@ -1,0 +1,60 @@
+{
+  "name": "Engagespot Blog",
+  "description": "Tutorials and articles on building a delightful notification experience in your web and mobile app.",
+  "url": "https://engagespot.co/blog",
+  "rssUrl": null,
+  "lastChecked": "2026-06-12",
+  "rssAvailable": false,
+  "posts": [
+    {
+      "title": "What's New in Engagespot - January 2025",
+      "url": "https://engagespot.co/blog/what-s-new-in-engagespot-january-2025",
+      "date": "2025-01-25"
+    },
+    {
+      "title": "How to Build a Notification Inbox in Flutter Using Engagespot",
+      "url": "https://engagespot.co/blog/how-to-build-a-notification-inbox-in-flutter-using-engagespot",
+      "date": "2025-01-03"
+    },
+    {
+      "title": "Multi-region data residency is now available to all Engagespot customers",
+      "url": "https://engagespot.co/blog/multi-region-data-residency",
+      "date": "2024-11-08"
+    },
+    {
+      "title": "Introducing Translations and Email Layouts",
+      "url": "https://engagespot.co/blog/introducing-translations-and-email-layouts",
+      "date": "2024-10-03"
+    },
+    {
+      "title": "Introducing version control",
+      "url": "https://engagespot.co/blog/introducing-version-control",
+      "date": "2024-08-27"
+    },
+    {
+      "title": "How to integrate Slack notification API in a NodeJS app",
+      "url": "https://engagespot.co/blog/how-to-send-slack-notifications-from-your-js-app",
+      "date": "2024-08-16"
+    },
+    {
+      "title": "React Tutorial - How to build a chat application using Socket.io",
+      "url": "https://engagespot.co/blog/building-a-realtime-chat-application-with-react-and-socket-io",
+      "date": "2024-07-27"
+    },
+    {
+      "title": "How to Send Email Notifications with Mailgun: A Step-by-Step Guide",
+      "url": "https://engagespot.co/blog/how-to-send-email-notifications-with-mailgun-a-step-by-step-guide",
+      "date": "2024-07-22"
+    },
+    {
+      "title": "Introducing Workflows",
+      "url": "https://engagespot.co/blog/introducing-workflows",
+      "date": "2024-07-22"
+    },
+    {
+      "title": "How to Integrate AWS SES with Engagespot for Seamless Email Delivery",
+      "url": "https://engagespot.co/blog/how-to-integrate-aws-ses-with-engagespot-for-seamless-email-delivery",
+      "date": "2024-07-22"
+    }
+  ]
+}
