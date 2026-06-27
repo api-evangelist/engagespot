@@ -3,7 +3,7 @@
   "description": "Tutorials and articles on building a delightful notification experience in your web and mobile app.",
   "url": "https://engagespot.co/blog",
   "rssUrl": null,
-  "lastChecked": "2026-06-12",
+  "lastChecked": "2026-06-21",
   "rssAvailable": false,
   "posts": [
     {
@@ -60,13 +60,13 @@
   "repo": "engagespot",
   "feeds": [
     {
-      "source": "https://x.com/engagespot",
-      "feed_url": "https://x.com/engagespot",
-      "title": "",
+      "source": "https://engagespot.co/blog",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
+      "method": "agent-scrape"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:40:02Z",
+  "agent_pulled": "2026-06-27"
 }
