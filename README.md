@@ -1,4 +1,4 @@
-# Engagespot (engagespot)
+# Engagespot
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,62 +64,112 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Engagespot is a notification infrastructure platform that provides developers with a unified REST API to send multi-channel notifications including in-app, email, web push, mobile push, SMS, WhatsApp, Slack, Discord, and webhooks from a single integration. The platform includes a pre-built customizable in-app notification inbox, a visual workflow editor for complex messaging logic, and a fine-grained user preference management system. Engagespot handles over 850 million monthly notifications and 3.7 billion API requests with 99.98% uptime, supporting data residency in both US and EU regions.
+Engagespot is a notification infrastructure platform that provides developers with a unified REST API to send multi-channel notifications including in-app, email, web push, mobile push, SMS, WhatsApp, Slack, Discord, and webhooks from a single integration. The platform includes a pre-built customizable in-app notification inbox, a visual workflow editor for complex messaging logic, and a fine-grained user preference management system. Engagespot handles over 850 million monthly notifications and 3.7 billion API requests with 99.98% uptime, supporting data residency in both US and EU regions. Teams can manage notification templates, monitor delivery logs, and connect to third-party providers such as SendGrid, AWS SES, Firebase, Twilio, and APNS through a centralized dashboard.
 
-- **APIs.json:** https://raw.githubusercontent.com/api-evangelist/engagespot/refs/heads/main/apis.yml
-- **Naftiko:** https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=engagespot-api-evangelist&utm_content=repo
+**Areas:** Notification · In-App Notifications · Push Notifications · Email · SMS · Multi-Channel · Messaging · Developer Tools · Notification Infrastructure
 
-## Tags
+## Engagespot on APIs.io
 
-- Notifications
-- In-App Notifications
-- Push Notifications
-- Email
-- SMS
-- Multi-Channel
-- Messaging
-- Developer Tools
-- Notification Infrastructure
+Everything profiled for Engagespot is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/engagespot/](https://apis.io/providers/engagespot/)** — or go straight to one of the APIs or properties below.
 
-## APIs
+### APIs (1)
 
-| Name | Description | Human URL |
-|------|-------------|-----------|
-| Engagespot Notifications API | REST API for sending multi-channel notifications, managing users, workflows, and preferences | https://docs.engagespot.co/api/api-reference/introduction |
+- [Engagespot Notifications API](https://apis.io/apis/engagespot/notifications-api/) — The Engagespot REST API enables sending multi-channel notifications to users, listing and deleting notification records, managing user accounts and…
 
-## Plans / Rate Limits / FinOps
+### Published properties
 
-| Resource | Path |
-|----------|------|
-| Plans & Pricing | [plans/engagespot-plans-pricing.yml](plans/engagespot-plans-pricing.yml) |
-| Rate Limits | [rate-limits/engagespot-rate-limits.yml](rate-limits/engagespot-rate-limits.yml) |
-| FinOps | [finops/engagespot-finops.yml](finops/engagespot-finops.yml) |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**Pricing summary:**
-- **Launch** — Free forever; 10,000 event triggers/month; 2 environments; 2 team members; 7-day feed retention
-- **Growth** — $250/month; 250,000 event triggers ($1.50/1K overage); unlimited environments and team members; 90-day retention
-- **Enterprise** — From $2,500/month; custom volume, data centers, SLA, and retention; 24/7 priority support
+#### JSON-LD (1)
 
-## Timestamps
+Linked-data contexts for the provider's vocabulary.
 
-- **Created:** 2026-06-12
-- **Modified:** 2026-06-12
+- [Engagespot Context](https://apis.io/jsonld/engagespot/engagespot-context/)
 
-## Common Properties
+#### Security (1)
 
-| Type | URL |
-|------|-----|
-| Website | https://engagespot.co/ |
-| Documentation | https://docs.engagespot.co/ |
-| GitHub Organization | https://github.com/Engagespot |
-| LinkedIn | https://www.linkedin.com/company/engagespot-co |
-| X | https://x.com/engagespot |
-| Blog | https://engagespot.co/blog |
-| Pricing | https://engagespot.co/pricing |
-| Status Page | https://engagespot.statuspage.io/ |
+Authentication, trust centre, and vulnerability disclosure.
 
-## Maintainers
+- [Engagespot Domain Security](https://apis.io/security/engagespot/engagespot-domain-security/)
 
-| Name | Email |
-|------|-------|
-| Kin Lane | kin@apievangelist.com |
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Engagespot Plans Pricing](https://apis.io/plans/engagespot/engagespot-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Engagespot Rate Limits](https://apis.io/rate-limits/engagespot/engagespot-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Engagespot Finops](https://apis.io/finops/engagespot/engagespot-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://engagespot.co/)
+- [Documentation](https://docs.engagespot.co/)
+- [Pricing](https://engagespot.co/pricing)
+- [Blog](https://engagespot.co/blog)
+- [GitHub](https://github.com/Engagespot)
+- [Status](https://engagespot.statuspage.io/)
+
+## API Evangelist rating
+
+**Kin Score 23.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 34.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.2** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/engagespot/](https://apis.io/providers/engagespot/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Engagespot: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/engagespot/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
